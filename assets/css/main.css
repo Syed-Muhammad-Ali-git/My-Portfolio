@@ -103,14 +103,31 @@ h6 {
 ------------------------------*/
 
 .send_message {
-  background-color: blue;
-  color: white;
+  background: linear-gradient(135deg, #4a00e0, #8e2de2);
+  color: #fff;
   border: none;
   outline: none;
-  padding: 10px;
-  border-radius: 20px;
-  font-weight: bolder;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(142, 45, 226, 0.3);
+  transition: all 0.3s ease;
 }
+
+.send_message:hover {
+  background: linear-gradient(135deg, #8e2de2, #4a00e0);
+  /* reverse gradient on hover */
+  box-shadow: 0 12px 20px rgba(142, 45, 226, 0.4);
+  transform: translateY(-2px);
+}
+
+.send_message:active {
+  transform: scale(0.98);
+  box-shadow: 0 4px 10px rgba(142, 45, 226, 0.2);
+}
+
 
 /* 
 .php-email-form .error-message {

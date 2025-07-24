@@ -390,7 +390,11 @@
             <h3>
               <img src="./Ali_CV.svg" alt="cv-resume" target="_blank" />
             </h3>
-            <h3><a href="./Ali_CV.svg" download="Ali_CV.svg">Download Resume Here</a></h3>
+            <h3>
+              <a href="./Ali_CV.svg" download="Ali_CV.svg"
+                >Download Resume Here</a
+              >
+            </h3>
           </div>
         </div>
       </section>
@@ -516,6 +520,16 @@
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
+                <!--  Hidden fields -->
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="https://thanks-to-submit.netlify.app/"
+                />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="text" name="_honey" style="display: none" />
+
+                <!-- form fields start -->
                 <div class="row gy-4">
                   <div class="col-md-6">
                     <label for="name-field" class="pb-2">Your Name</label>
